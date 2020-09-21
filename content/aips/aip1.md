@@ -28,8 +28,8 @@ This AIP purpose is also to dedicate XX% of the ER to a kickstart incentive for 
 
 - Migration LEND -> AAVE asset with the migration contract
 - Start of the Safety Module incentive with initial reward of 400 AAVE/day
-- Increase of the rewards to XX AAVE/day after the activation of the Safety Module
 - Increase of the rewards to XX AAVE/day after the activation of the Balancer Liquidity providing
+- Increase of the rewards to XX AAVE/day after the activation of the Safety Module
 - Activation of the quarterly plan of AAVE rewards allocation
 
 ## ER allocation plan
@@ -37,16 +37,16 @@ This AIP purpose is also to dedicate XX% of the ER to a kickstart incentive for 
 | Purpose | AAVE per day | % of the ER | Total |
 |-|-|-|-|
 |Safety module kickstart | 400 | xx% | xx |
-|Activation of the Safety module | XXX | XXX |
-|Activation of the Balancer LP program | XXX| XXX |
+|Activation of the Balancer LP program | XXX | XXX |
+|Activation of the Safety module | XXX| XXX |
 
 The Bootstrapping phase of Safety module will be a step-by-step process in 3 main phases : 
 - Initial bootstraping with launch of the safety module, the ability to stake and earn AAVE rewards but no activation of the safety module and thus riskless for stakers
-- Activation of the Safety Module, increase of the AAVE rewards to XX AAVE/day and new line of defense for the Aave protocol users
 - Activation of the Balancer LP program, increase of the AAVE rewards to XX AAVE/day and new rewards in BAL tokens
+- Activation of the Safety Module, increase of the AAVE rewards to XX AAVE/day and new line of defense for the Aave protocol users
 
-The initial Bootstraping phase rationale is designed to have lower rewards and a riskless environement to allow the majority of LEND holders to migrate at their own pace and avoid rush sentiment while interracting with critical migrating and staking smart-contracts.
 The Activation of the Balancer LP program rationale is designed to create as much as possible decentralized liquidity to the AAVE asset, allowing independance from centralized finance and attractive liquidity for the ecosystem, the recent success of Uniswap LP program with the UNI asset acts as an encouraging example of this kind of incentivization scheme. 
+The initial Bootstraping phase rationale is designed to have lower rewards and a riskless environement to allow the majority of LEND holders to migrate at their own pace and avoid rush sentiment while interracting with critical migrating and staking smart-contracts.
 
 The ER allocation plan next quarter date should be voted before the Xx/XX/202x, in case of late or no vote on a new ER allocation plan, the current allocation will continue until a vote or ER being empty.
 
