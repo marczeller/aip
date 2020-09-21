@@ -19,16 +19,15 @@ and this AIP is the first binding step of this community ownership of the Aave p
 
 This AIP, if accepted by the community, will slowly deprecate the LEND asset in favour of the AAVE asset.
 As stated in the Aavenomics, this token upgrade will also create the Ecosystem Reserve (ER) and the Safety Module (SM)
-The Safety Module is designed as an addtional line of defense for Aave liquidity providers and as a way for AAVE holders to "stake" their assets in exchange of a range of rewards.
+The Safety Module is designed as an additional line of defense for Aave liquidity providers and as a way for AAVE holders to "stake" their assets in exchange of a range of rewards.
 
 
-This AIP purpose is also to dedicate XX% of the ER to a kickstart incentive for the Safety module first stakers destributed during a quarter.
+This AIP purpose is also to dedicate XX% of the ER to a kickstart incentive for the Safety module first stakers distributed during a quarter.
 
 ## AIP content in short
 
 - Migration LEND -> AAVE asset with the migration contract
 - Start of the Safety Module incentive with initial reward of 400 AAVE/day
-- Increase of the rewards to XX AAVE/day after the activation of the Balancer Liquidity providing
 - Increase of the rewards to XX AAVE/day after the activation of the Safety Module
 - Activation of the quarterly plan of AAVE rewards allocation
 
@@ -37,16 +36,13 @@ This AIP purpose is also to dedicate XX% of the ER to a kickstart incentive for 
 | Purpose | AAVE per day | % of the ER | Total |
 |-|-|-|-|
 |Safety module kickstart | 400 | xx% | xx |
-|Activation of the Balancer LP program | XXX | XXX |
 |Activation of the Safety module | XXX| XXX |
 
-The Bootstrapping phase of Safety module will be a step-by-step process in 3 main phases : 
-- Initial bootstraping with launch of the safety module, the ability to stake and earn AAVE rewards but no activation of the safety module and thus riskless for stakers
-- Activation of the Balancer LP program, increase of the AAVE rewards to XX AAVE/day and new rewards in BAL tokens
+The bootstrapping phase of Safety module will be a step-by-step process in 3 main phases : 
+- Initial bootstrapping with launch of the safety module, the ability to stake and earn AAVE rewards but no activation of the safety module and thus riskless for stakers
 - Activation of the Safety Module, increase of the AAVE rewards to XX AAVE/day and new line of defense for the Aave protocol users
 
-The Activation of the Balancer LP program rationale is designed to create as much as possible decentralized liquidity to the AAVE asset, allowing independance from centralized finance and attractive liquidity for the ecosystem, the recent success of Uniswap LP program with the UNI asset acts as an encouraging example of this kind of incentivization scheme. 
-The initial Bootstraping phase rationale is designed to have lower rewards and a riskless environement to allow the majority of LEND holders to migrate at their own pace and avoid rush sentiment while interracting with critical migrating and staking smart-contracts.
+The initial bootstrapping phase rationale is designed to have lower rewards and a riskless environment to allow the majority of LEND holders to migrate at their own pace and avoid rush sentiment while interracting with critical migrating and staking smart-contracts.
 
 The ER allocation plan next quarter date should be voted before the Xx/XX/202x, in case of late or no vote on a new ER allocation plan, the current allocation will continue until a vote or ER being empty.
 
