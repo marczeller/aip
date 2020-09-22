@@ -46,6 +46,23 @@ The initial bootstrapping phase rationale is designed to have lower rewards and 
 
 The ER allocation plan next quarter date should be voted before the Xx/XX/202x, in case of late or no vote on a new ER allocation plan, the current allocation will continue until a vote or ER being empty.
 
+## Mainnet addresses and relevant notes
+
+If this AIP is validated by a community vote, the following addresses will be involved in the migration process :
+
+- 0x000 : LendToAaveMigrator, [ABI](LINK) : The migration contract
+- 0x000 : AAVE token contract, [ABI](placeholder) : the ERC20 AAVE token contract
+- 0x000 : StakedAave, [ABI](placeholder) : The Staking contract for AAVE
+- 0x000 : AaveGenesisPayloadProposal, [ABI](placeholder) : Contract in charge of enforcement of the AIP outcome
+- 0x000 : AaveGenesisExecutor, [ABI](placeholder) : Contract enforcing a 24h delay on enforcement of AIP outcome to allow the community to be prepared to migrate
+- 0x000 : AaveIncentivesVault, [ABI](placeholder) : Vault contract storing the Ecosystem Rewards reserve of 3M AAVE tokens
+
+
+The migration process for every LEND holder will leverage the method migrateFromLend() with a simple `uint 256` input of the `amount`, non-technical users will have a migration portal available on the [Aave application](app.aave.com/placeholder)
+
+The contracts are deployed to the Ethereum mainnet but are **not activated until the outcome of the current AIP vote**.
+Please refrain from trying to use them before activation, it will result in a failed transaction.
+
 ## AIP Editors
 
 The current AIP editors are
