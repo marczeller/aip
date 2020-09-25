@@ -56,7 +56,7 @@ If this AIP is validated by a community vote, the following addresses will be in
 - [0x25f2226b597e8f9514b3f68f00f494cf4f286491](https://etherscan.io/address/0x25f2226b597e8f9514b3f68f00f494cf4f286491#code) AaveIncentivesVault : Ecosystem Reserve
 
 
-The migration process for every LEND holder will leverage the method migrateFromLend() with a simple `uint 256` input of the `amount`, non-technical users will have a migration portal available on the [Aave application](app.aave.com/placeholder)
+The migration process for every LEND holder will leverage the method migrateFromLend() with a simple `uint256` input of the `amount`, non-technical users will have a migration portal available on the [Aave application](https://aave.com/)
 
 The contracts are deployed to the Ethereum mainnet but are **not activated until the outcome of the current AIP vote**.
 Please refrain from trying to use them before activation, it will result in a failed transaction.
