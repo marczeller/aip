@@ -34,8 +34,8 @@ This AIP purpose is also to dedicate a part of the ER to a kickstart incentive f
 ## Safety Incentives Schedule
 
 The bootstrapping phase of Safety module will be a step-by-step process in 2 main phases : 
-- Initial bootstrapping with launch of the safety module, the ability to stake and earn AAVE rewards but no activation of the safety module and thus riskless for stakers
-- Activation of the Safety Module, new line of defense for the Aave protocol users
+- Initial bootstrapping with launch of the safety module, the ability to stake and earn AAVE rewards but no activation of the protocol protection (slashing) and thus riskless for stakers.
+- Activation of the Safety Module, new line of defense for the Aave protocol users.
 
 The initial bootstrapping phase rationale is designed to have lower rewards and a riskless environment to allow the majority of LEND holders to migrate at their own pace and avoid rush sentiment while interracting with critical migrating and staking smart-contracts.
 
