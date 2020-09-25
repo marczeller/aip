@@ -2,10 +2,10 @@
 aip: 1
 title: LEND/AAVE migration and activation of the Safety Module
 status: WIP
-author: Marc Zeller (@mzeller)
+author: Marc Zeller (@marczeller)
 discussions: https://governance.aave.com/t/initial-discussion-aave-reserve-emission-for-safety-and-ecosystem-incentives/85/60
 created: 2020-09-21
-updated: 2020-09-23
+updated: 2020-09-25
 ---
 
 ## AIP rationale
@@ -23,40 +23,37 @@ As stated in the Aavenomics, this token upgrade will also create the Ecosystem R
 The Safety Module is designed as an additional line of defense for Aave liquidity providers and as a way for AAVE holders to "stake" their assets in exchange of a range of rewards.
 
 
-This AIP purpose is also to dedicate XX% of the ER to a kickstart incentive for the Safety module first stakers distributed during a quarter.
+This AIP purpose is also to dedicate a part of the ER to a kickstart incentive for the Safety module first stakers distributed during a quarter.
 
 ## AIP content in short
 
 - Migration LEND -> AAVE asset with the migration contract
 - Activation of the quarterly plan of Safety Incentives (SI) allocation
 - Start of the Safety Module with initial SI rewards of 400 AAVE/day
-- Increase of the SI rewards to XX AAVE/day after the activation of the Safety Module
 
-## ER allocation plan
+## Safety Incentives Schedule
 
-| Purpose | AAVE per day | % of the ER | Total |
-|-|-|-|-|
-|Safety module kickstart | 400 | xx% | xx |
-|Activation of the Safety module | XXX| XXX |
-
-The bootstrapping phase of Safety module will be a step-by-step process in 3 main phases : 
+The bootstrapping phase of Safety module will be a step-by-step process in 2 main phases : 
 - Initial bootstrapping with launch of the safety module, the ability to stake and earn AAVE rewards but no activation of the safety module and thus riskless for stakers
-- Activation of the Safety Module, increase of the AAVE SI rewards to XX AAVE/day and new line of defense for the Aave protocol users
+- Activation of the Safety Module, new line of defense for the Aave protocol users
 
 The initial bootstrapping phase rationale is designed to have lower rewards and a riskless environment to allow the majority of LEND holders to migrate at their own pace and avoid rush sentiment while interracting with critical migrating and staking smart-contracts.
 
-The Safety Incentive (SI) allocation plan next quarter date should be voted before the Xx/XX/202x, in case of late or no vote on a new SI allocation plan, the current allocation will continue until a vote or ER being empty.
+After Activation of the Safety module, The Aave governance can adjust the SI schedule and emission rate
+
+The Safety Incentive (SI) allocation plan next quarter date should be voted before the end of the 3 months (90 days) distribution schedule, in case of late or no vote on a new SI allocation plan, the current allocation will continue until a vote or ER being empty.
 
 ## Mainnet addresses and relevant notes
 
 If this AIP is validated by a community vote, the following addresses will be involved in the migration process :
 
-- 0x000 : LendToAaveMigrator, [ABI](LINK) : The migration contract
-- 0x000 : AAVE token contract, [ABI](placeholder) : the ERC20 AAVE token contract
-- 0x000 : StakedAave, [ABI](placeholder) : The Staking contract for AAVE
-- 0x000 : AaveGenesisPayloadProposal, [ABI](placeholder) : Contract in charge of enforcement of the AIP outcome
-- 0x000 : AaveGenesisExecutor, [ABI](placeholder) : Contract enforcing a 24h delay on enforcement of AIP outcome to allow the community to be prepared to migrate
-- 0x000 : AaveIncentivesVault, [ABI](placeholder) : Vault contract storing the Ecosystem Rewards reserve of 3M AAVE tokens
+- [0x8a2efd9a790199f4c94c6effe210fce0b4724f52](https://etherscan.io/address/0x8a2efd9a790199f4c94c6effe210fce0b4724f52) AaveProtoGovernance : the governance contract
+- [0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9](https://etherscan.io/address/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9#code) AAVE token contract : the ERC20 AAVE token contract
+- [0x4da27a545c0c5b758a6ba100e3a049001de870f5](https://etherscan.io/address/0x4da27a545c0c5b758a6ba100e3a049001de870f5) StakedAave : The Staking contract for AAVE
+- [0x317625234562b1526ea2fac4030ea499c5291de4](https://etherscan.io/address/0x317625234562b1526ea2fac4030ea499c5291de4) LendToAaveMigrator The migration contract
+- [0x66c812e4b6e889b638ff548c8c02c803f640d6d5](https://etherscan.io/address/0x66c812e4b6e889b638ff548c8c02c803f640d6d5) AaveGenesisPayloadProposal : Contract in charge of enforcement of the AIP outcome
+- [0xa133459b2502b0137e85a446fa8d4e300877a007](https://etherscan.io/address/0xa133459b2502b0137e85a446fa8d4e300877a007) AaveGenesisExecutor : Contract enforcing a 24h delay on enforcement of AIP outcome to allow the community to be prepared to migrate
+- [0x25f2226b597e8f9514b3f68f00f494cf4f286491](https://etherscan.io/address/0x25f2226b597e8f9514b3f68f00f494cf4f286491#code) AaveIncentivesVault : Ecosystem Reserve
 
 
 The migration process for every LEND holder will leverage the method migrateFromLend() with a simple `uint 256` input of the `amount`, non-technical users will have a migration portal available on the [Aave application](app.aave.com/placeholder)
